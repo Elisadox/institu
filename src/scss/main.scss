@@ -12,23 +12,88 @@ img,
 video {
   display: block;
 }
-.body {
+body {
   background: #eee;
 }
 .screen {
+  position: relative;
   width: 1080px;
   height: 1920px;
   margin: 0 auto;
   background: #fff;
 }
 .box1 {
-  width: 200px;
-  height: 300px;
-  background: blue;
-  position: fixed;
+  width: 625px;
+  height: 1200px;
+  position: absolute;
   top: -100px;
-  left: -50px;
+  left: -10px;
   transition: all 2s;
+}
+.box1.is-active {
+  width: 1000px;
+  height: 1700px;
+}
+.box2 {
+  width: 500px;
+  height: 900px;
+  position: absolute;
+  top: -100px;
+  left: 590px;
+  transition: all 2s;
+}
+.box2.is-active {
+  width: 1000px;
+  height: 1700px;
+  left: 250px;
+}
+h1 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7px;
+}
+h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+.language {
+  top: -100px;
+  left: 800px;
+  position: absolute;
+}
+.box3 {
+  width: 450px;
+  height: 1000px;
+  position: absolute;
+  bottom: -0px;
+  left: 635px;
+  transition: all 2s;
+}
+.box3.is-active {
+  width: 1300px;
+  height: 1550px;
+  left: -50px;
+}
+.box4 {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  bottom: -0px;
+  left: -10px;
+  transition: all 2s;
+}
+.box4.is-active {
+  width: 1350px;
+  height: 1300px;
 }
 
 .hand {
@@ -36,13 +101,15 @@ video {
   height: 113px;
   position: fixed;
   right: 30px;
+  top: 30px;
+  color: rgb(0, 0, 0);
 }
 .logo {
   width: 110px;
   height: 90px;
   flex-shrink: 0;
   aspect-ratio: 19/14;
-  position: fixed;
+  position: absolute;
   bottom: 30px;
   right: 30px;
 }
