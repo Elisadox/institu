@@ -21,6 +21,7 @@ body {
   height: 1920px;
   margin: 0 auto;
   background: #fff;
+  overflow: hidden;
 }
 .box1 {
   width: 625px;
@@ -36,7 +37,7 @@ body {
 }
 .box2 {
   width: 500px;
-  height: 900px;
+  height: 800px;
   position: absolute;
   top: -100px;
   left: 590px;
@@ -47,7 +48,8 @@ body {
   height: 1700px;
   left: 250px;
 }
-h1 {
+
+.title {
   color: #f00;
   font-family: Inter;
   font-size: 140px;
@@ -55,20 +57,43 @@ h1 {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 7px;
+  z-index: 1;
+  position: relative;
+  top: 490px;
+  left: 300px;
 }
-h2 {
+.title.is-active {
+  color: #fff;
+}
+.under_title {
   color: #000;
   font-family: Inter;
   font-size: 48px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
   letter-spacing: 2.4px;
+  position: relative;
+  top: 490px;
+  left: 300px;
+  z-index: 1;
+}
+.under_title.is-active {
+  color: #ffffff;
 }
 .language {
-  top: -100px;
-  left: 800px;
+  top: 50px;
+  left: 600px;
+  right: -130px;
   position: absolute;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .box3 {
   width: 450px;
@@ -97,12 +122,18 @@ h2 {
 }
 
 .hand {
-  width: 100px;
-  height: 113px;
-  position: fixed;
-  right: 30px;
-  top: 30px;
-  color: rgb(0, 0, 0);
+  position: absolute;
+  right: 600px;
+  top: 1170px;
+  color: rgb(255, 255, 255);
+  path {
+    fill: #ffb0ec;
+  }
+}
+.hand.is-active {
+  path {
+    fill: rgb(255, 255, 255);
+  }
 }
 .logo {
   width: 110px;
