@@ -11,6 +11,7 @@ a {
 img,
 video {
   display: block;
+  filter: blur(7px);
 }
 body {
   background: #eee;
